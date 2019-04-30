@@ -3,14 +3,16 @@
 import h from '../../../helpers/h'
 
 export default function(editor) {
-  editor.toggleMark('bold')
+  editor.insertTextByKey('a', 4, 'x')
 }
 
 export const input = (
   <value>
     <document>
       <paragraph>
-        w<anchor />o<focus />rd
+        <text key="a" marks={[{ type: 'bold' }]}>
+          w<cursor />ord
+        </text>
       </paragraph>
     </document>
   </value>
@@ -20,11 +22,9 @@ export const output = (
   <value>
     <document>
       <paragraph>
-        w
         <b>
-          <anchor />o
+          w<cursor />ordx
         </b>
-        <focus />rd
       </paragraph>
     </document>
   </value>
