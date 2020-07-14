@@ -1,5 +1,4 @@
 /** @jsx jsx */
-
 import { jsx } from '../..'
 
 export const run = editor => {
@@ -7,7 +6,6 @@ export const run = editor => {
   editor.insertText('w')
   editor.insertText('o')
 }
-
 export const input = (
   <editor>
     <block>
@@ -16,5 +14,4 @@ export const input = (
     </block>
   </editor>
 )
-
 export const output = input

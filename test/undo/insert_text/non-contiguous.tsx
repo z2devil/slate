@@ -1,5 +1,4 @@
 /** @jsx jsx */
-
 import { Transforms } from 'slate'
 import { jsx } from '../..'
 
@@ -10,7 +9,6 @@ export const run = editor => {
   Transforms.move(editor, { reverse: true })
   editor.insertText('o')
 }
-
 export const input = (
   <editor>
     <block>
@@ -19,7 +17,6 @@ export const input = (
     </block>
   </editor>
 )
-
 export const output = (
   <editor>
     <block>
@@ -28,5 +25,4 @@ export const output = (
     </block>
   </editor>
 )
-
 export const skip = true

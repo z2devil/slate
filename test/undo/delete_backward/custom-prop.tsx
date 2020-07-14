@@ -1,18 +1,20 @@
 /** @jsx jsx */
-
+import { Transforms } from 'slate'
 import { jsx } from '../..'
 
 export const run = editor => {
-  editor.insertText('text')
+  Transforms.delete(editor)
 }
-
 export const input = (
   <editor>
-    <block>
-      one
-      <cursor />
+    <block a>
+      o<anchor />
+      ne
+    </block>
+    <block b>
+      tw
+      <focus />o
     </block>
   </editor>
 )
-
 export const output = input
